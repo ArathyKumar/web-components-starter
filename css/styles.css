@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+header {
+  background: black;
+  color: white;
+  padding: 24px 64px;
+}
+
+h1 {
+  margin: 0;
+}
+
+main,
+footer {
+  padding: 24px 64px;
+}
+
+custom-button {
+  margin-right: 8px;
+}
+
+/* Web component button */
+custom-button::part(button) {
+  background: #ee0001;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+}
+
+/* Native HTML button */
+button {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  padding: 8px 16px;
+}
